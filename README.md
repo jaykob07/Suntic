@@ -11,6 +11,8 @@
 
 ### Autenticación de Usuario: Incluye autenticación nativa de Django y autenticación con Google OAuth.
 
+![image alt](https://github.com/jaykob07/Suntic/blob/98d546ab52d7de059798c42206e30db8f2d0a7e6/S6.png)
+
 # Sistema de Registro e Inicio de Sesión: 
 ### Permite a los usuarios registrarse e iniciar sesión de forma segura.
 
