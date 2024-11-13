@@ -34,11 +34,14 @@
 ### Crispy Forms: Para mejorar la apariencia y validación de los formularios en Django.
 ### Google OAuth: Para permitir la autenticación a través de una cuenta de Google.
 
-#Requisitos
+# Requisitos
 
-### pip3 install django
+###  source myvenv/bin/activate
 ### python3 -m venv myvenv
+### pip3 install django
 ### pip3 install django-allauth
 ### pip3 install django-crispy-forms
 ### pip3 install crispy-bootstrap5
 ### pip3 install django-bootstrap-v5
+### pip3 install django-otp
+
