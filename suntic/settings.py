@@ -40,11 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',  
 
-    # Aplicaciones de tu proyecto
+    
     'app',
     
     
-    # Aplicaciones de terceros
+    
     'crispy_forms',
     'crispy_bootstrap5',
     'django_otp',
@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     
     
     
-    # Django Allauth
+    
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -184,11 +184,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = 'auth.User'
 
-LOGIN_REDIRECT_URL = 'document_list'  # Ruta después del login exitoso
+LOGIN_REDIRECT_URL = 'document_list'
 
-LOGIN_URL = 'two_factor:login'  # Ruta del login
+LOGIN_URL = 'two_factor:login' 
 
-LOGOUT_REDIRECT_URL = '/'  # Ruta después del logout
+LOGOUT_REDIRECT_URL = '/'  
 
 
 

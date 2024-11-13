@@ -7,12 +7,6 @@ def home(request):
     return render(request, 'home.html')
 
 
-# def document_list(request):
-#     documents = Document.objects.all()
-#     return render(request, 'documentos/document_list.html', {'documents': documents})
-
-
-
 @login_required
 def document_list(request):
     documents = Document.objects.filter(submitted_by=request.user) | Document.objects.filter(approver=request.user)

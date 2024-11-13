@@ -1,0 +1,14 @@
+# Requisitos
+
+# Crea y activa tu entorno virtual:
+# python3 -m venv myvenv
+# source myvenv/bin/activate  # Para Linux o Unix
+# myvenv\Scripts\activate  # Para Windows
+
+# Instalar las dependencias del proyecto:
+pip3 install django==5.1.3
+pip3 install django-allauth
+pip3 install django-crispy-forms
+pip3 install crispy-bootstrap5
+pip3 install django-bootstrap-v5
+pip3 install django-otp
