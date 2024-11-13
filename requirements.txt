@@ -1,6 +1,6 @@
 # Requisitos
 
-# Crea y activa tu entorno virtual:
+# Crea y activa el entorno virtual:
 # python3 -m venv myvenv
 # source myvenv/bin/activate  # Para Linux o Unix
 # myvenv\Scripts\activate  # Para Windows
