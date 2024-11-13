@@ -36,8 +36,8 @@
 
 # Requisitos
 
-###  source myvenv/bin/activate
 ### python3 -m venv myvenv
+###  source myvenv/bin/activate
 ### pip3 install django
 ### pip3 install django-allauth
 ### pip3 install django-crispy-forms
