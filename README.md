@@ -5,6 +5,8 @@
 
 ### Este proyecto es una aplicación web desarrollada en Django que implementa autenticación de usuarios utilizando Google OAuth y el sistema de autenticación de Django. La interfaz de usuario está construida con Bootstrap para diseño responsivo y crispy forms para mejorar la presentación de los formularios.
 
+![image alt](https://github.com/jaykob07/Suntic/blob/74922b1dc1cb8aa98495d0d14da1035ed7a3576c/S2.png)
+
 # Características
 
 ### Autenticación de Usuario: Incluye autenticación nativa de Django y autenticación con Google OAuth.
