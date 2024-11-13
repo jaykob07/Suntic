@@ -19,6 +19,8 @@
 # Interfaz Responsiva: 
 ### La interfaz está diseñada con Bootstrap para adaptarse a diferentes dispositivos.
 
+![image alt](https://github.com/jaykob07/Suntic/blob/ec448633715c80b53530ea83d580f1f9293db4f5/S3.png)
+
 # Validación y Estilizado de Formularios:
 ### Implementa crispy forms para mejorar la apariencia y validación de los formularios.
 
