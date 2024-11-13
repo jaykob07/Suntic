@@ -24,6 +24,8 @@
 # Validación y Estilizado de Formularios:
 ### Implementa crispy forms para mejorar la apariencia y validación de los formularios.
 
+![image alt](https://github.com/jaykob07/Suntic/blob/864ba2d95ac0c0d720d68372d1f99fd8a497e5ba/S5.png)
+
 # Tecnologías Utilizadas
 
 ### Django: Framework backend utilizado para desarrollar la lógica de la aplicación.
