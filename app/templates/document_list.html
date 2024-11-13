@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center">
+        <h2 class="mb-4">Lista de Documentos</h2>
+        <a href="{% url 'document_create' %}" class="btn btn-primary mb-4">Crear Documento</a>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <ul class="list-group">
+                {% for document in documents %}
+                <li class="list-group-item">
+                    <h5 class="mb-1"><strong>{{ document.title }}</strong></h5>
+                    <p class="mb-1">{{ document.description }}</p>
+                    <p class="mb-1">
+                        {% if document.approved %}
+                        <span class="badge bg-success">Aprobado</span>
+                        {% else %}
+                        <span class="badge bg-warning">Pendiente de Aprobación</span>
+                        {% endif %}
+                    </p>
+                    <div class="mt-2">
+                        <a href="{{ document.pdf_file.url }}" class="btn btn-sm btn-primary" target="_blank">Ver Documento</a>
+                        <a href="{% url 'document_update' document.pk %}" class="btn btn-sm btn-secondary">Editar</a>
+                        <a href="{% url 'document_delete' document.pk %}" class="btn btn-sm btn-danger">Eliminar</a>
+                        {% if document.approver == user and not document.approved %}
+                        <a href="{% url 'document_approve' document.pk %}" class="btn btn-sm btn-info">Aprobar / Rechazar</a>
+                        {% endif %}
+                    </div>
+                </li>
+                {% empty %}
+                <li class="list-group-item text-center">No hay documentos disponibles.</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

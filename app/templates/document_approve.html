@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Aprobar/Rechazar Documento</h2>
+  <p>Título: {{ document.title }}</p>
+  <p>Descripción: {{ document.description }}</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" name="action" value="approve" class="btn btn-success">Aprobar</button>
+    <button type="submit" name="action" value="reject" class="btn btn-warning">Rechazar</button>
+    <a href="{% url 'document_list' %}" class="btn btn-secondary">Cancelar</a>
+  </form>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron mt-4">
+        <h1 class="display-4">Bienvenido a la Aplicación de Documentos</h1>
+        <p class="lead">Gestión de documentos de manera rápida y segura.</p>
+        <hr class="my-4">
+        {% if user.is_authenticated %}
+            <p>Comienza a gestionar tus documentos ahora mismo.</p>
+            <a class="btn btn-primary btn-lg" href="{% url 'document_list' %}" role="button">Ver Documentos</a>
+        {% else %}
+            <p>Inicia sesión para acceder a todas las funciones.</p>
+            <a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button">Iniciar Sesión</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

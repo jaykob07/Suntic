@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <h2>{% if form.instance.pk %}Actualizar Documento{% else %}Crear Documento{% endif %}</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-primary mt-3">
+      {% if form.instance.pk %}Actualizar{% else %}Guardar{% endif %}
+    </button>
+  </form>
+{% endblock %}
