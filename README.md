@@ -39,7 +39,7 @@
 ### python3 -m venv myvenv
 ###  source myvenv/bin/activate si usas linux o unix
 ### myvenv\Scripts\activate si usas windows
-### pip3 install django
+### pip3 install django==5.1.3
 ### pip3 install django-allauth
 ### pip3 install django-crispy-forms
 ### pip3 install crispy-bootstrap5
